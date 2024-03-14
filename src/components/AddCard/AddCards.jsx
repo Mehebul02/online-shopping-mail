@@ -13,7 +13,7 @@ const AddCards = ({products,handleDelete}) => {
             <p className='text-xl'>Price</p>
             </div>
             {
-                products.map((product,idx)=><AddCard key={idx} handleDelete={handleDelete} product={product}></AddCard>)
+                products.map((product,idx)=><AddCard key={idx} idx={idx} handleDelete={handleDelete} product={product}></AddCard>)
 
             }
            
