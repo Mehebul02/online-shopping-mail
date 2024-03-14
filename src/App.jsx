@@ -6,10 +6,17 @@ import Cards from './components/Cards/Cards'
 import Header from './components/Header/Header'
 function App() {
    const[products,setProducts]=useState([])
-    const handleAddCard =(pd)=>{
+    const handleAddCard =(p)=>{
       
-        const newCardAdd =[...products,pd]
-        setProducts(newCardAdd)
+        // // const newCardAdd =[...products,pd]
+        // setProducts(newCardAdd)
+        const isExit =products.find((pd)=>pd.id==p.id)
+        if(!isExit){
+          setProducts([...products,p])
+        }
+        else{
+          alert('asdasd')
+        }
        
     }
   return (

@@ -14,7 +14,7 @@ const AddCard = ({product}) => {
 };
 
 AddCard.propTypes = {
-    
+    product:PropTypes.array
 };
 
 export default AddCard;
