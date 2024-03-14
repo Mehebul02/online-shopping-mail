@@ -1,6 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 import bg from '../../assets/images/bg.jpg'
-const Header = () => {
+const Header = ({products}) => {
     return (
         <div >
            <header className='flex justify-between max-w-7xl mx-auto mt-10 '>
@@ -12,7 +12,7 @@ const Header = () => {
                    <a href=""><button className='text-xl text-white px-6 py-2 rounded-xl bg-cyan-800'>All</button></a>
                    <a href=""><li className='text-cyan-800'>Recent</li></a>
                     <a href=""><li className='text-cyan-800'>Shared With me</li></a>
-        <button className="text-2xl"><FiShoppingCart></FiShoppingCart> </button>
+        <h1 className="text-2xl"><sup>{products.length}</sup><FiShoppingCart></FiShoppingCart> </h1>
                     
                 </ul>
             </nav>

@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       
-  <Header></Header>
+  <Header products={products}></Header>
   <div className='flex justify-evenly  gap-10 mt-10 '>
   <Cards handleAddCard ={handleAddCard }></Cards>
   <AddCards products={products}></AddCards>
